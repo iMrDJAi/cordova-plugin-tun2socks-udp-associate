@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-tun2socks" version="1.0.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-tun2socks" version="1.0.0">
   <name>Tun2Socks</name>
   <description>Tun2Socks for Android</description>
   <license>Apache 2.0</license>
@@ -37,12 +36,24 @@
 
     <source-file
       src="android/java/org/uproxy/tun2socks"
-      target-dir="src/org/uproxy/tun2socks" />
+      target-dir="java/org/uproxy/tun2socks" />
 
     <source-file
       src="android/libs/armeabi-v7a/libtun2socks.so"
       target-dir="libs/armeabi-v7a" />
 
-		<framework src="android/java/build-extras.gradle" custom="true" type="gradleReference" />
+    <source-file
+      src="android/libs/arm64-v8a/libtun2socks.so"
+      target-dir="libs/arm64-v8a" />
+      
+    <source-file
+      src="android/libs/x86/libtun2socks.so"
+      target-dir="libs/x86" />
+
+    <source-file
+      src="android/libs/x86_64/libtun2socks.so"
+      target-dir="libs/x86_64" />
+
+    <framework src="android/java/build-extras.gradle" custom="true" type="gradleReference" />
   </platform>
 </plugin>
