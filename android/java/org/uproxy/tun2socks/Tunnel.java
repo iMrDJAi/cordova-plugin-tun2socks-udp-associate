@@ -204,7 +204,7 @@ public class Tunnel {
         socksServerAddress,
         //socksServerAddress,  // The UDP relay has the same address and port as the SOCKS server.
         null,
-        String.format("%s:%d", DNS_RESOLVER_IP, DNS_RESOLVER_PORT),
+        String.format("%s:%s", DNS_RESOLVER_IP, String.valueOf(DNS_RESOLVER_PORT)),
         //true /* transparent DNS */,
         false,
         true /* socks5 UDP Enabled */);

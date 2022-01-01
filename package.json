@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-tun2socks-udp-associate",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Cordova plugin to enable a system-wide VPN for Android devices.",
   "repository": {
     "type": "git",
